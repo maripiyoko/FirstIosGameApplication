@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		CAC9CABD2C0D9688004B5875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC9CABC2C0D9688004B5875 /* AppDelegate.m */; };
 		CAC9CAC02C0D9688004B5875 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC9CABF2C0D9688004B5875 /* SceneDelegate.m */; };
-		CAC9CAC32C0D9688004B5875 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC9CAC22C0D9688004B5875 /* ViewController.m */; };
 		CAC9CAC62C0D9688004B5875 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAC9CAC52C0D9688004B5875 /* Base */; };
 		CAC9CAC82C0D9689004B5875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC9CAC72C0D9689004B5875 /* Assets.xcassets */; };
 		CAC9CACB2C0D9689004B5875 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAC9CACA2C0D9689004B5875 /* Base */; };
 		CAC9CACE2C0D9689004B5875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC9CACD2C0D9689004B5875 /* main.m */; };
+		CAC9CAD62C0D9820004B5875 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC9CAD52C0D9820004B5875 /* GameController.framework */; };
+		CAC9CAD82C0D9869004B5875 /* Mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC9CAD72C0D9869004B5875 /* Mobile.xcframework */; };
+		CAC9CADB2C0D99CB004B5875 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC9CADA2C0D99CB004B5875 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,15 @@
 		CAC9CABC2C0D9688004B5875 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CAC9CABE2C0D9688004B5875 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CAC9CABF2C0D9688004B5875 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CAC9CAC12C0D9688004B5875 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CAC9CAC22C0D9688004B5875 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAC9CAC52C0D9688004B5875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAC9CAC72C0D9689004B5875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC9CACA2C0D9689004B5875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC9CACC2C0D9689004B5875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC9CACD2C0D9689004B5875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAC9CAD52C0D9820004B5875 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		CAC9CAD72C0D9869004B5875 /* Mobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Mobile.xcframework; sourceTree = "<group>"; };
+		CAC9CAD92C0D992E004B5875 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		CAC9CADA2C0D99CB004B5875 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC9CAD62C0D9820004B5875 /* GameController.framework in Frameworks */,
+				CAC9CAD82C0D9869004B5875 /* Mobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,7 @@
 			children = (
 				CAC9CABA2C0D9688004B5875 /* MyFirstProject */,
 				CAC9CAB92C0D9688004B5875 /* Products */,
+				CAC9CAD42C0D9820004B5875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +72,8 @@
 				CAC9CABC2C0D9688004B5875 /* AppDelegate.m */,
 				CAC9CABE2C0D9688004B5875 /* SceneDelegate.h */,
 				CAC9CABF2C0D9688004B5875 /* SceneDelegate.m */,
-				CAC9CAC12C0D9688004B5875 /* ViewController.h */,
-				CAC9CAC22C0D9688004B5875 /* ViewController.m */,
+				CAC9CAD92C0D992E004B5875 /* MyViewController.h */,
+				CAC9CADA2C0D99CB004B5875 /* MyViewController.m */,
 				CAC9CAC42C0D9688004B5875 /* Main.storyboard */,
 				CAC9CAC72C0D9689004B5875 /* Assets.xcassets */,
 				CAC9CAC92C0D9689004B5875 /* LaunchScreen.storyboard */,
@@ -74,6 +81,15 @@
 				CAC9CACD2C0D9689004B5875 /* main.m */,
 			);
 			path = MyFirstProject;
+			sourceTree = "<group>";
+		};
+		CAC9CAD42C0D9820004B5875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9CAD72C0D9869004B5875 /* Mobile.xcframework */,
+				CAC9CAD52C0D9820004B5875 /* GameController.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC9CAC32C0D9688004B5875 /* ViewController.m in Sources */,
 				CAC9CABD2C0D9688004B5875 /* AppDelegate.m in Sources */,
 				CAC9CACE2C0D9689004B5875 /* main.m in Sources */,
 				CAC9CAC02C0D9688004B5875 /* SceneDelegate.m in Sources */,
+				CAC9CADB2C0D99CB004B5875 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyViewController.h"
 
 @interface AppDelegate ()
 
@@ -36,5 +37,17 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [[self ebitenViewController] suspendGame];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[self ebitenViewController] resumeGame];
+}
+
+- (MyViewController*)ebitenViewController
+{
+    return (MyViewController*)([[self window] rootViewController]);
+}
 
 @end
